@@ -38,13 +38,13 @@ const About = () => {
 
   const teamMembers = [
     {
-      name: 'Dr. Reza Shirazi',
-      title: 'Lead Oral Surgeon',
-      specialty: 'Restorative & Cosmetic Dentistry',
-      experience: '20+ Years',
+      name: 'Dr. Nauman Shirazi',
+      title: 'Dental Specialist',
+      specialty: 'Implants, Aligners & Cosmetic Dentistry',
+      experience: '15+ Years',
       image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&h=300&fit=crop&crop=face',
-      bio: 'Dr. Shirazi is a highly respected oral surgeon with over 20 years of experience in complex restorative and cosmetic dentistry. His meticulous approach and dedication to patient comfort have earned him recognition as one of the region\'s leading dental professionals.',
-      qualifications: ['DMD - International Dental Association', 'Certified Implantologist', 'Advanced Cosmetic Dentistry', 'Published Researcher'],
+      bio: 'Dr. Nauman Shirazi is a highly respected dental specialist with over 15 years of experience in implantology, orthodontic aligners, and cosmetic dentistry. His meticulous approach and dedication to patient comfort have earned him recognition as one of the region\'s leading dental professionals.',
+      qualifications: ['DMD - International Dental Association', 'Certified Implantologist', 'Advanced Cosmetic Dentistry', 'Invisalign Certified'],
     },
     {
       name: 'Dr. Fatima Hassan',
