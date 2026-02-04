@@ -237,8 +237,84 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Services Section */}
+      {/* Why Choose Shirazi Dental Care Section */}
       <section className="py-20 md:py-32 bg-neutral-50 dark:bg-neutral-800">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-5xl md:text-6xl font-light text-primary-900 dark:text-white tracking-tight mb-6">
+              Hallmarks of Premium Care
+              <br />
+              <span className="text-secondary-500">at Shirazi Dental</span>
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            {[
+              {
+                icon: <Zap className="w-6 h-6" />,
+                title: 'Advanced Technology',
+                desc: 'Precise, minimally invasive treatments using cutting-edge equipment',
+              },
+              {
+                icon: <Shield className="w-6 h-6" />,
+                title: 'Strict Sterilization',
+                desc: 'International protocols ensuring complete safety for every procedure',
+              },
+              {
+                icon: <Heart className="w-6 h-6" />,
+                title: 'Gentle Care',
+                desc: 'Comfortable procedures prioritizing your peace of mind throughout',
+              },
+              {
+                icon: <Award className="w-6 h-6" />,
+                title: 'Expert Leadership',
+                desc: 'Dr. Nauman Shirazi—specialist in implants, aligners & cosmetics',
+              },
+              {
+                icon: <Star className="w-6 h-6" />,
+                title: 'Trusted Expertise',
+                desc: '15+ years of experience with academic leadership in dentistry',
+              },
+              {
+                icon: <Smile className="w-6 h-6" />,
+                title: 'Serene Environment',
+                desc: 'Modern sanctuary in the heart of Karachi designed for your comfort',
+              },
+            ].map((benefit, index) => (
+              <motion.div
+                key={benefit.title}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="flex gap-6"
+              >
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-secondary-500/10 border border-secondary-500/30">
+                    <div className="text-secondary-500">{benefit.icon}</div>
+                  </div>
+                </div>
+                <div className="flex-grow">
+                  <h3 className="text-lg font-semibold text-primary-900 dark:text-white mb-2">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">
+                    {benefit.desc}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Clinic Highlights Section */}
+      <section className="py-20 md:py-32 bg-white dark:bg-neutral-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -247,52 +323,40 @@ const Home = () => {
             className="text-center mb-16"
           >
             <h2 className="text-5xl md:text-6xl font-light text-primary-900 dark:text-white tracking-tight mb-6">
-              Our Services
+              A Sanctuary of
+              <br />
+              <span className="text-secondary-500">Modern Dentistry</span>
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-              Comprehensive solutions for every aspect of your dental health
+              Impeccably hygienic, thoughtfully designed—your comfort and safety come first.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredServices.map((service, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=400&fit=crop',
+              'https://images.unsplash.com/photo-1631217314831-11245b1b4e41?w=600&h=400&fit=crop',
+              'https://images.unsplash.com/photo-1577091160399-112ba68c5c7d?w=600&h=400&fit=crop',
+              'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&h=400&fit=crop',
+              'https://images.unsplash.com/photo-1576091160550-112698e46601?w=600&h=400&fit=crop',
+              'https://images.unsplash.com/photo-1576091160648-112698e46601?w=600&h=400&fit=crop',
+            ].map((image, index) => (
               <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                key={index}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
+                className="relative overflow-hidden rounded-xl aspect-square group"
               >
-                <Card className="h-full p-8 group hover:border-secondary-500 transition-all duration-300">
-                  <Link to={service.href} className="space-y-4 block">
-                    <div className="inline-flex p-3 bg-neutral-100 dark:bg-neutral-700 rounded-lg group-hover:bg-secondary-500/10 transition-colors">
-                      <div className="text-secondary-500">{service.icon}</div>
-                    </div>
-                    <h3 className="text-xl font-semibold text-primary-900 dark:text-white">
-                      {service.title}
-                    </h3>
-                    <p className="text-neutral-600 dark:text-neutral-300 text-sm leading-relaxed">
-                      {service.description}
-                    </p>
-                    <div className="flex items-center text-secondary-500 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                      Learn More <ArrowRight size={16} className="ml-2" />
-                    </div>
-                  </Link>
-                </Card>
+                <img
+                  src={image}
+                  alt={`Clinic highlight ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </motion.div>
             ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button
-              as={Link}
-              to="/services"
-              variant="primary"
-              size="lg"
-              className="bg-primary-900 hover:bg-primary-800 dark:bg-white dark:hover:bg-neutral-100 text-white dark:text-primary-900 font-semibold"
-            >
-              Explore All Services
-            </Button>
           </div>
         </div>
       </section>
