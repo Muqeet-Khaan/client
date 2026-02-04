@@ -10,6 +10,7 @@ import {
   Instagram,
   ArrowRight,
   Heart,
+  MessageCircle,
 } from 'lucide-react';
 import Logo from '../common/Logo';
 import Button from '../ui/Button';
