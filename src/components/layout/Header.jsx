@@ -33,8 +33,17 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
           {/* Logo - Left Side */}
-          <Link to="/" className="flex items-center">
-            <Logo className="h-10 w-auto" variant={isDark ? 'white' : 'default'} />
+          <Link to="/" className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-gradient-to-br from-primary-900 to-primary-800 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg">KDC</span>
+            </div>
+            <div className="hidden sm:block">
+              <h1 className="text-primary-900 dark:text-white font-bold text-sm leading-tight">
+                Karachi
+                <br />
+                <span className="text-xs font-medium text-neutral-600 dark:text-neutral-400">Dental Care</span>
+              </h1>
+            </div>
           </Link>
 
           {/* Desktop Navigation - Centered */}
@@ -45,8 +54,8 @@ const Header = () => {
                 to={item.href}
                 className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 transform hover:scale-105 ${
                   isActive(item.href)
-                    ? 'bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 shadow-sm'
-                    : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-primary-600 dark:hover:text-primary-400'
+                    ? 'bg-secondary-100 dark:bg-secondary-900/30 text-secondary-700 dark:text-secondary-300 shadow-sm'
+                    : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-secondary-600 dark:hover:text-secondary-400'
                 }`}
               >
                 {item.name}
@@ -74,7 +83,7 @@ const Header = () => {
               variant="primary"
               size="sm"
               icon={<Calendar size={16} />}
-              className="shadow-sm hover:shadow-md transition-shadow duration-200"
+              className="bg-secondary-500 hover:bg-secondary-600 text-white shadow-sm hover:shadow-md transition-shadow duration-200"
             >
               Book Now
             </Button>
