@@ -132,8 +132,8 @@ const About = () => {
                   Our Mission
                 </p>
                 <p className="text-2xl font-light text-primary-900 dark:text-white leading-relaxed">
-                  "To deliver world-class dental care through innovation, expertise, and unwavering commitment to patient excellence, 
-                  redefining what luxury dentistry means in Shiraz."
+                  "To deliver world-class dental care through innovation, expertise, and unwavering commitment to patient excellence,
+                  redefining what luxury dentistry means in Karachi."
                 </p>
               </motion.div>
             </div>
