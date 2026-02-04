@@ -266,7 +266,7 @@ const Home = () => {
               Elevating Oral Health with Uncompromising Excellence
             </h2>
             <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed max-w-4xl mx-auto">
-              At Karachi Dental Care, we redefine premium dentistry through unwavering commitment to the highest standards of safety, precision, and patient comfort. Our state-of-the-art clinic offers a tranquil sanctuary where every detail is curated for your relaxation and confidence. We prioritize personalized care plans, advanced techniques, and lifelong oral wellness—because your smile is a reflection of elegance and vitality.
+              At Shirazi Dental Care, we redefine premium dentistry through unwavering commitment to the highest standards of safety, precision, and patient comfort. Our state-of-the-art clinic offers a tranquil sanctuary where every detail is curated for your relaxation and confidence. We prioritize personalized care plans, advanced techniques, and lifelong oral wellness—because your smile is a reflection of elegance and vitality.
             </p>
           </motion.div>
         </div>
