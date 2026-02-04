@@ -90,7 +90,7 @@ const About = () => {
           >
             <div className="text-center space-y-6 mb-16">
               <h2 className="text-5xl md:text-6xl font-light text-primary-900 dark:text-white tracking-tight">
-                Our Vision for Karachi
+                Our Vision for Dental Care
               </h2>
               <div className="w-12 h-0.5 bg-secondary-500 mx-auto" />
             </div>
@@ -104,7 +104,7 @@ const About = () => {
               >
                 <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
                   Shirazi Dental Care represents a paradigm shift in how premium dental care is delivered. We envision
-                  a Karachi where exceptional oral health is accessible to those who demand the highest standards.
+                  a Rawalpindi where exceptional oral health is accessible to those who demand the highest standards.
                 </p>
 
                 <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
@@ -133,7 +133,7 @@ const About = () => {
                 </p>
                 <p className="text-2xl font-light text-primary-900 dark:text-white leading-relaxed">
                   "To deliver world-class dental care through innovation, expertise, and unwavering commitment to patient excellence,
-                  redefining what luxury dentistry means in Karachi."
+                  redefining what luxury dentistry means in Rawalpindi."
                 </p>
               </motion.div>
             </div>
