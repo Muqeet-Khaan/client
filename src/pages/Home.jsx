@@ -83,9 +83,20 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-neutral-900">
       {/* Hero Section - Minimalist Luxury */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary-900 dark:bg-neutral-900">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&h=1080&fit=crop"
+            alt="Modern dental clinic interior"
+            className="w-full h-full object-cover"
+          />
+          {/* Premium Overlay Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-900/75 via-primary-900/65 to-primary-900/75"></div>
+        </div>
+
         {/* Subtle Background Pattern */}
-        <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 opacity-5 z-5">
           <div className="absolute inset-0 bg-gradient-to-br from-secondary-500 via-transparent to-transparent" />
         </div>
 
