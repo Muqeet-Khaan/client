@@ -50,38 +50,49 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Clinic Info */}
             <div className="space-y-6">
-              <Logo variant="white" className="h-12 w-auto" />
+              <div className="space-y-2">
+                <h2 className="text-2xl font-bold font-heading">Karachi Dental Care</h2>
+                <p className="text-secondary-400 text-sm font-medium">Modern Dentistry • Trusted Excellence • Radiant Smiles</p>
+              </div>
               <p className="text-neutral-300 text-sm leading-relaxed">
-                Providing compassionate dental care since 2020. Your smile is
-                our priority, and we're committed to making every visit
-                comfortable and stress-free.
+                At Karachi Dental Care, we redefine premium dentistry through unwavering commitment to the highest standards of safety, precision, and patient comfort. Your smile deserves nothing less than extraordinary.
               </p>
 
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
                   <MapPin
                     size={16}
-                    className="text-primary-400 mt-1 flex-shrink-0"
+                    className="text-secondary-400 mt-1 flex-shrink-0"
                   />
                   <span className="text-sm text-neutral-300">
-                    123 Broadway Street
+                    Karachi, Pakistan
                     <br />
-                    New York, NY 10001
+                    <span className="text-xs text-neutral-400">Luxury Dental Care Center</span>
                   </span>
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <Phone size={16} className="text-primary-400 flex-shrink-0" />
+                  <Phone size={16} className="text-secondary-400 flex-shrink-0" />
                   <a
                     href="tel:03338353771"
-                    className="text-sm text-neutral-300 hover:text-white transition-colors"
+                    className="text-sm text-neutral-300 hover:text-secondary-300 transition-colors font-medium"
                   >
-                    0333 8353771
+                    Call or WhatsApp: 0333 8353771
                   </a>
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <Mail size={16} className="text-primary-400 flex-shrink-0" />
+                  <MessageCircle size={16} className="text-secondary-400 flex-shrink-0" />
+                  <a
+                    href="https://wa.me/923338353771"
+                    className="text-sm text-neutral-300 hover:text-secondary-300 transition-colors font-medium"
+                  >
+                    Priority WhatsApp Appointments
+                  </a>
+                </div>
+
+                <div className="flex items-center space-x-3">
+                  <Mail size={16} className="text-secondary-400 flex-shrink-0" />
                   <a
                     href="mailto:info@Karachidentalclinic.com"
                     className="text-sm text-neutral-300 hover:text-white transition-colors"
@@ -93,12 +104,12 @@ const Footer = () => {
                 <div className="flex items-start space-x-3">
                   <Clock
                     size={16}
-                    className="text-primary-400 mt-1 flex-shrink-0"
+                    className="text-secondary-400 mt-1 flex-shrink-0"
                   />
                   <div className="text-sm text-neutral-300">
+                    <p className="font-medium mb-1">Hours of Operation</p>
                     <p>Mon - Sat: 5:00 PM - 9:30 PM</p>
                     <p>Sunday: Closed</p>
-                    {/* <p className="text-accent-teal">Emergency: 24/7</p> */}
                   </div>
                 </div>
               </div>
