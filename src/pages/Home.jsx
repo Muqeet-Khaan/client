@@ -17,45 +17,6 @@ import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 
 const Home = () => {
-  // 6 Featured Services for Homepage
-  const featuredServices = [
-    {
-      icon: <Smile className="w-8 h-8" />,
-      title: 'Dental Implants',
-      description: 'Permanent tooth replacements for complete oral harmony.',
-      href: '/services',
-    },
-    {
-      icon: <Shield className="w-8 h-8" />,
-      title: 'Root Canal',
-      description: 'Painless therapy to preserve your natural teeth.',
-      href: '/services',
-    },
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: 'Cosmetic Dentistry',
-      description: 'Crown & bridge work for seamless restorations.',
-      href: '/services',
-    },
-    {
-      icon: <Award className="w-8 h-8" />,
-      title: 'Orthodontics',
-      description: 'Sophisticated alignment for facial elegance.',
-      href: '/services',
-    },
-    {
-      icon: <Heart className="w-8 h-8" />,
-      title: 'Scaling & Polishing',
-      description: 'Professional cleaning for natural radiance.',
-      href: '/services',
-    },
-    {
-      icon: <Smile className="w-8 h-8" />,
-      title: 'Preventive Care',
-      description: 'Comprehensive exams and personalized treatment plans.',
-      href: '/services',
-    },
-  ];
 
   // Patient Testimonials
   const testimonials = [
