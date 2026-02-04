@@ -183,11 +183,10 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-lg text-neutral-700 dark:text-neutral-300">
                 <p>
-                  Karachi Dental Clinic was founded in 2010 with a simple
-                  mission: to provide exceptional dental care in a warm,
-                  welcoming environment. Dr. Sarah Johnson started this practice
-                  after recognizing the need for patient-centered dental care in
-                  New York.
+                  Shirazi Dental Care was founded with a simple mission: to provide
+                  exceptional dental care in a warm, welcoming environment. Our founders
+                  recognized the need for patient-centered, luxury dental care in Shiraz
+                  and established this practice to meet that vision.
                 </p>
                 <p>
                   Over the years, we've grown into a comprehensive dental
