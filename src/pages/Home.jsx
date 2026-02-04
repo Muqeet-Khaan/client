@@ -120,7 +120,7 @@ const Home = () => {
     {
       icon: <TrendingUp className="w-6 h-6 text-secondary-500" />,
       title: 'Premium Reputation',
-      description: 'Karachi\'s most trusted destination for sophisticated dental care.',
+      description: 'Shiraz\'s most trusted destination for sophisticated dental care.',
     },
   ];
 
