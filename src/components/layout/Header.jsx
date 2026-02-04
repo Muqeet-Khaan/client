@@ -33,13 +33,15 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
           {/* Logo - Left Side */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary-900 to-primary-800 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">KDC</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F5b1d42f14a4747cbba3cfd3ccbd5b3b4%2F229c45bd6ec0487199c78d88b663e275?format=webp&width=200&height=200"
+              alt="Shirazi Dental Care Logo"
+              className="w-12 h-12 object-contain"
+            />
             <div className="hidden sm:block">
               <h1 className="text-primary-900 dark:text-white font-bold text-sm leading-tight">
-                Karachi
+                Shirazi
                 <br />
                 <span className="text-xs font-medium text-neutral-600 dark:text-neutral-400">Dental Care</span>
               </h1>
