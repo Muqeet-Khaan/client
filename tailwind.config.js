@@ -9,32 +9,33 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: '#f3f4f8',
-          100: '#e7e9f1',
-          200: '#d4d7e6',
-          300: '#b3b9d4',
-          400: '#8892b8',
-          500: '#1a2f5a', // Deep Navy Blue
-          600: '#152850',
-          700: '#101d3a',
-          800: '#0d1628',
-          900: '#080f1a',
+          50: '#fafaf9',
+          100: '#f5f5f3',
+          200: '#e7e5e0',
+          300: '#d1ccc5',
+          400: '#a39e96',
+          500: '#4a453f', // Charcoal
+          600: '#3f3a35',
+          700: '#2d2925',
+          800: '#1a1714',
+          900: '#0a0705',
         },
         secondary: {
-          50: '#fffaf0',
-          100: '#fff5e0',
-          200: '#ffe8b3',
-          300: '#ffd97d',
-          400: '#ffc947',
-          500: '#d4a64e', // Soft Gold
-          600: '#b89438',
-          700: '#9c8130',
-          800: '#7a6528',
-          900: '#5a4d20',
+          50: '#fffbf0',
+          100: '#fff8e0',
+          200: '#ffefc0',
+          300: '#ffe4a3',
+          400: '#ffd47d',
+          500: '#d4af37', // Gold (24K)
+          600: '#c9a227',
+          700: '#b0941f',
+          800: '#8a7219',
+          900: '#5a4d0f',
         },
         accent: {
-          gold: '#d4a64e', // Soft gold for accents
-          gray: '#9ca3af', // Subtle gray
+          gold: '#d4af37',
+          charcoal: '#4a453f',
+          white: '#ffffff',
         },
         neutral: {
           50: '#F7FAFC',
