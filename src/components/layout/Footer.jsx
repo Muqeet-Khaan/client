@@ -95,10 +95,10 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <Mail size={16} className="text-secondary-400 flex-shrink-0" />
                   <a
-                    href="mailto:info@Karachidentalclinic.com"
+                    href="mailto:info@shirazidentalcare.com"
                     className="text-sm text-neutral-300 hover:text-white transition-colors"
                   >
-                    info@Karachidentalclinic.com
+                    info@shirazidentalcare.com
                   </a>
                 </div>
 
