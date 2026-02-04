@@ -354,7 +354,7 @@ const Contact = () => {
                   {/* WhatsApp Alternative */}
                   <Button
                     as="a"
-                    href="https://wa.me/923338353771"
+                    href="https://wa.me/923009206148"
                     variant="outline"
                     size="lg"
                     fullWidth
