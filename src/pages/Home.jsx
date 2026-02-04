@@ -246,7 +246,7 @@ const Home = () => {
               {
                 icon: <Smile className="w-6 h-6" />,
                 title: 'Serene Environment',
-                desc: 'Modern sanctuary in the heart of Karachi designed for your comfort',
+              desc: 'Modern sanctuary in the heart of Rawalpindi designed for your comfort',
               },
             ].map((benefit, index) => (
               <motion.div
@@ -297,12 +297,11 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=400&fit=crop',
-              'https://images.unsplash.com/photo-1631217314831-11245b1b4e41?w=600&h=400&fit=crop',
-              'https://images.unsplash.com/photo-1577091160399-112ba68c5c7d?w=600&h=400&fit=crop',
-              'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&h=400&fit=crop',
-              'https://images.unsplash.com/photo-1576091160550-112698e46601?w=600&h=400&fit=crop',
-              'https://images.unsplash.com/photo-1576091160648-112698e46601?w=600&h=400&fit=crop',
+              'https://cdn.builder.io/api/v1/image/assets%2F5b1d42f14a4747cbba3cfd3ccbd5b3b4%2Fe4d830f146c847ffb0ab5a06133d4dfa?format=webp&width=800&height=1200',
+              'https://cdn.builder.io/api/v1/image/assets%2F5b1d42f14a4747cbba3cfd3ccbd5b3b4%2F7ec9a0ef3bf4426094c8d02d61c327a8?format=webp&width=800&height=1200',
+              'https://cdn.builder.io/api/v1/image/assets%2F5b1d42f14a4747cbba3cfd3ccbd5b3b4%2F12f2c02cf64b4ffb93011a129edf45c9?format=webp&width=800&height=1200',
+              'https://cdn.builder.io/api/v1/image/assets%2F5b1d42f14a4747cbba3cfd3ccbd5b3b4%2F0e7d248145e8496e98efa3e98f5be6eb?format=webp&width=800&height=1200',
+              'https://cdn.builder.io/api/v1/image/assets%2F5b1d42f14a4747cbba3cfd3ccbd5b3b4%2F361169dc2d7c44f39e651bb223cd5108?format=webp&width=800&height=1200',
             ].map((image, index) => (
               <motion.div
                 key={index}
