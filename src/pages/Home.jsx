@@ -473,12 +473,12 @@ const Home = () => {
             className="space-y-8"
           >
             <h2 className="text-5xl md:text-6xl font-light text-white tracking-tight">
-              Ready for Your
+              Elevate Your Smile with
               <br />
-              <span className="text-secondary-500">Transformation?</span>
+              <span className="text-secondary-500">Shirazi Dental Care</span>
             </h2>
             <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
-              Your smile deserves the finest care. Let's create your path to exceptional oral health.
+              Discover personalized, premium dental treatment in Rawal Pindi today.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
@@ -489,15 +489,27 @@ const Home = () => {
                 size="lg"
                 className="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-semibold"
               >
-                Schedule Consultation
+                Book Appointment
               </Button>
               <Button
-                href="https://wa.me/923338353771"
+                as="a"
+                href="https://wa.me/923009206148"
+                target="_blank"
+                rel="noopener noreferrer"
                 variant="outline"
                 size="lg"
                 className="border-secondary-500 text-secondary-500 hover:bg-secondary-500/10"
               >
-                WhatsApp Now
+                WhatsApp (+92 300 920 6148)
+              </Button>
+              <Button
+                as="a"
+                href="tel:+923009206148"
+                variant="outline"
+                size="lg"
+                className="border-secondary-500 text-secondary-500 hover:bg-secondary-500/10"
+              >
+                Call Us
               </Button>
             </div>
           </motion.div>
