@@ -17,12 +17,12 @@ const Logo = ({ className = "h-8 w-auto", variant = "default" }) => {
   const currentColors = colors[variant] || colors.default
 
   return (
-    <svg 
+    <svg
       className={className}
-      viewBox="0 0 200 60" 
-      fill="none" 
+      viewBox="0 0 200 60"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      aria-label="Karachi Dental Clinic Logo"
+      aria-label="Shirazi Dental Care Logo"
     >
       {/* Tooth Icon */}
       <g>
@@ -60,7 +60,7 @@ const Logo = ({ className = "h-8 w-auto", variant = "default" }) => {
         fontSize="18"
         fill={currentColors.primary}
       >
-        Karachi
+        Shirazi
       </text>
       <text
         x="55"
@@ -70,7 +70,7 @@ const Logo = ({ className = "h-8 w-auto", variant = "default" }) => {
         fontSize="12"
         fill={currentColors.secondary}
       >
-        DENTAL CLINIC
+        DENTAL CARE
       </text>
     </svg>
   )

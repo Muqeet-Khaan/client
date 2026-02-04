@@ -33,8 +33,19 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
           {/* Logo - Left Side */}
-          <Link to="/" className="flex items-center">
-            <Logo className="h-10 w-auto" variant={isDark ? 'white' : 'default'} />
+          <Link to="/" className="flex items-center space-x-3">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F5b1d42f14a4747cbba3cfd3ccbd5b3b4%2F229c45bd6ec0487199c78d88b663e275?format=webp&width=200&height=200"
+              alt="Shirazi Dental Care Logo"
+              className="w-12 h-12 object-contain"
+            />
+            <div className="hidden sm:block">
+              <h1 className="text-primary-900 dark:text-white font-bold text-sm leading-tight">
+                Shirazi
+                <br />
+                <span className="text-xs font-medium text-neutral-600 dark:text-neutral-400">Dental Care</span>
+              </h1>
+            </div>
           </Link>
 
           {/* Desktop Navigation - Centered */}
@@ -45,8 +56,8 @@ const Header = () => {
                 to={item.href}
                 className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 transform hover:scale-105 ${
                   isActive(item.href)
-                    ? 'bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 shadow-sm'
-                    : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-primary-600 dark:hover:text-primary-400'
+                    ? 'bg-secondary-100 dark:bg-secondary-900/30 text-secondary-700 dark:text-secondary-300 shadow-sm'
+                    : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-secondary-600 dark:hover:text-secondary-400'
                 }`}
               >
                 {item.name}
@@ -74,7 +85,7 @@ const Header = () => {
               variant="primary"
               size="sm"
               icon={<Calendar size={16} />}
-              className="shadow-sm hover:shadow-md transition-shadow duration-200"
+              className="bg-secondary-500 hover:bg-secondary-600 text-white shadow-sm hover:shadow-md transition-shadow duration-200"
             >
               Book Now
             </Button>
@@ -108,8 +119,8 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className={`block px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 transform active:scale-95 ${
                     isActive(item.href)
-                      ? 'text-primary-700 bg-primary-100 dark:text-primary-300 dark:bg-primary-900/30 shadow-sm border border-primary-200 dark:border-primary-800'
-                      : 'text-neutral-700 dark:text-neutral-300 bg-neutral-50 dark:bg-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:text-primary-600 dark:hover:text-primary-400 border border-neutral-200 dark:border-neutral-700'
+                      ? 'text-secondary-700 bg-secondary-100 dark:text-secondary-300 dark:bg-secondary-900/30 shadow-sm border border-secondary-200 dark:border-secondary-800'
+                      : 'text-neutral-700 dark:text-neutral-300 bg-neutral-50 dark:bg-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:text-secondary-600 dark:hover:text-secondary-400 border border-neutral-200 dark:border-neutral-700'
                   }`}
                 >
                   {item.name}

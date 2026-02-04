@@ -2,21 +2,21 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Custom CSS Variables for theming */
+/* Custom CSS Variables for luxury dental clinic theming */
 :root {
-  --color-primary: #1C9DD9;
-  --color-secondary: #0F4C81;
-  --color-accent-teal: #20C997;
-  --color-accent-yellow: #FFC857;
-  --color-neutral-light: #F7FAFC;
-  --color-neutral-mid: #E2E8F0;
-  --color-neutral-dark: #2D3748;
+  --color-primary: #4a453f; /* Charcoal */
+  --color-secondary: #d4af37; /* 24K Gold */
+  --color-accent-gold: #d4af37;
+  --color-accent-charcoal: #4a453f;
+  --color-neutral-light: #ffffff;
+  --color-neutral-mid: #f5f5f3;
+  --color-neutral-dark: #2d2925;
 }
 
 .dark {
-  --color-neutral-light: #1A202C;
-  --color-neutral-mid: #4A5568;
-  --color-neutral-dark: #F7FAFC;
+  --color-neutral-light: #1a1714;
+  --color-neutral-mid: #3f3a35;
+  --color-neutral-dark: #ffffff;
 }
 
 /* Base styles */
