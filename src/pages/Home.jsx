@@ -430,7 +430,7 @@ const Home = () => {
               <span className="text-secondary-500">Shirazi Dental Care</span>
             </h2>
             <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
-              Discover personalized, premium dental treatment in Rawal Pindi today.
+              Discover personalized, premium dental treatment in Rawalpindi, Pakistan today.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
