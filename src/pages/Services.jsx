@@ -13,7 +13,8 @@ import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 
 const Services = () => {
-  const [expandedCategory, setExpandedCategory] = useState(null);
+  // State not needed if showing all categories at once
+  // const [expandedCategory, setExpandedCategory] = useState('general');
 
   const serviceCategories = [
     {
