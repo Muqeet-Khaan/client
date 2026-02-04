@@ -52,7 +52,7 @@ const Footer = () => {
             {/* Clinic Info */}
             <div className="space-y-6">
               <div className="space-y-2">
-                <h2 className="text-2xl font-bold font-heading">Karachi Dental Care</h2>
+                <h2 className="text-2xl font-bold font-heading">Shirazi Dental Care</h2>
                 <p className="text-secondary-400 text-sm font-medium">Modern Dentistry • Trusted Excellence • Radiant Smiles</p>
               </div>
               <p className="text-neutral-300 text-sm leading-relaxed">
