@@ -408,7 +408,7 @@ const Contact = () => {
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Karachi Dental Clinic Location"
+                      title="Shirazi Dental Care Location"
                     />
                   </div>
                 </Card>
