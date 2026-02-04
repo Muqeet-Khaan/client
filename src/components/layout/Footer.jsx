@@ -221,7 +221,7 @@ const Footer = () => {
         <div className="border-t border-neutral-800 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-neutral-400">
-              © {currentYear} Karachi Dental Care. All rights reserved.
+              © {currentYear} Shirazi Dental Care. All rights reserved.
             </div>
 
             <div className="flex items-center space-x-6">
