@@ -49,7 +49,10 @@ const FloatingActionButtons = () => {
       </AnimatePresence>
 
       {/* WhatsApp Button - Bottom Right */}
-      <motion.button
+      <motion.a
+        href="https://wa.me/923338353771"
+        target="_blank"
+        rel="noopener noreferrer"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1, type: "spring", stiffness: 200, damping: 20 }}
@@ -59,7 +62,7 @@ const FloatingActionButtons = () => {
         aria-label="Contact us on WhatsApp"
       >
         <i className="fab fa-whatsapp text-2xl group-hover:animate-pulse"></i>
-        
+
         {/* Floating tooltip */}
         <motion.div
           initial={{ opacity: 0, x: 10 }}
@@ -69,7 +72,7 @@ const FloatingActionButtons = () => {
           Chat with us on WhatsApp
           <div className="absolute top-1/2 -right-1 w-2 h-2 bg-neutral-800 transform rotate-45 -translate-y-1/2"></div>
         </motion.div>
-      </motion.button>
+      </motion.a>
 
       {/* Pulse animation ring for WhatsApp button */}
       <motion.div
