@@ -117,8 +117,8 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className={`block px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 transform active:scale-95 ${
                     isActive(item.href)
-                      ? 'text-primary-700 bg-primary-100 dark:text-primary-300 dark:bg-primary-900/30 shadow-sm border border-primary-200 dark:border-primary-800'
-                      : 'text-neutral-700 dark:text-neutral-300 bg-neutral-50 dark:bg-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:text-primary-600 dark:hover:text-primary-400 border border-neutral-200 dark:border-neutral-700'
+                      ? 'text-secondary-700 bg-secondary-100 dark:text-secondary-300 dark:bg-secondary-900/30 shadow-sm border border-secondary-200 dark:border-secondary-800'
+                      : 'text-neutral-700 dark:text-neutral-300 bg-neutral-50 dark:bg-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:text-secondary-600 dark:hover:text-secondary-400 border border-neutral-200 dark:border-neutral-700'
                   }`}
                 >
                   {item.name}
