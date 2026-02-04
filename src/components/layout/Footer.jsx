@@ -66,7 +66,7 @@ const Footer = () => {
                     className="text-secondary-400 mt-1 flex-shrink-0"
                   />
                   <span className="text-sm text-neutral-300">
-                    Shiraz, Iran
+                    Rawal Pindi, Karachi, Pakistan
                     <br />
                     <span className="text-xs text-neutral-400">Luxury Dental Care Center</span>
                   </span>
@@ -75,17 +75,17 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <Phone size={16} className="text-secondary-400 flex-shrink-0" />
                   <a
-                    href="tel:03338353771"
+                    href="tel:+923009206148"
                     className="text-sm text-neutral-300 hover:text-secondary-300 transition-colors font-medium"
                   >
-                    Call or WhatsApp: 0333 8353771
+                    Call or WhatsApp: +92 300 920 6148
                   </a>
                 </div>
 
                 <div className="flex items-center space-x-3">
                   <MessageCircle size={16} className="text-secondary-400 flex-shrink-0" />
                   <a
-                    href="https://wa.me/923338353771"
+                    href="https://wa.me/923009206148"
                     className="text-sm text-neutral-300 hover:text-secondary-300 transition-colors font-medium"
                   >
                     Priority WhatsApp Appointments
