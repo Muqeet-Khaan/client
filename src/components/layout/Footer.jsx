@@ -217,6 +217,48 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Clinic Gallery Section */}
+        <div className="border-t border-neutral-800 py-12">
+          <h3 className="text-lg font-semibold mb-8 text-white text-center">Our Modern Clinic</h3>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F5b1d42f14a4747cbba3cfd3ccbd5b3b4%2Fe4d830f146c847ffb0ab5a06133d4dfa?format=webp&width=800&height=1200"
+                alt="Clinic interior - waiting area"
+                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F5b1d42f14a4747cbba3cfd3ccbd5b3b4%2F7ec9a0ef3bf4426094c8d02d61c327a8?format=webp&width=800&height=1200"
+                alt="Clinic interior - treatment room"
+                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F5b1d42f14a4747cbba3cfd3ccbd5b3b4%2F12f2c02cf64b4ffb93011a129edf45c9?format=webp&width=800&height=1200"
+                alt="Clinic interior - modern equipment"
+                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F5b1d42f14a4747cbba3cfd3ccbd5b3b4%2F0e7d248145e8496e98efa3e98f5be6eb?format=webp&width=800&height=1200"
+                alt="Clinic interior - sterilization area"
+                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F5b1d42f14a4747cbba3cfd3ccbd5b3b4%2F361169dc2d7c44f39e651bb223cd5108?format=webp&width=800&height=1200"
+                alt="Clinic interior - patient chair"
+                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* Bottom Bar */}
         <div className="border-t border-neutral-800 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
