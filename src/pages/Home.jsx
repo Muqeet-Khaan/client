@@ -361,7 +361,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* The Sterilization Standard Banner */}
+      {/* Hygiene & Safety Banner */}
       <section className="py-20 md:py-28 bg-primary-900 dark:bg-neutral-900 relative overflow-hidden">
         {/* Decorative accent */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-secondary-500/5 rounded-full -mr-48 -mt-48" />
@@ -379,23 +379,13 @@ const Home = () => {
 
             <div className="space-y-6">
               <h2 className="text-5xl md:text-6xl font-light text-white tracking-tight">
-                Your Safety,
+                Your Safety
                 <br />
-                <span className="text-secondary-500">Our Standard</span>
+                <span className="text-secondary-500">is Our Priority</span>
               </h2>
               <p className="text-lg text-neutral-300 max-w-3xl mx-auto leading-relaxed">
-                We adhere strictly to international sterilization protocols. Every instrument is processed through our 
-                state-of-the-art autoclave systems. Every surface meets ISO certification. Every visit, complete peace of mind.
+                We adhere to the highest sterilization standards, use single-use tools where possible, and employ digital low-radiation imaging—ensuring every visit is secure and serene.
               </p>
-            </div>
-
-            {/* Standards List */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8">
-              {['ISO 9001', 'CDC Certified', 'Autoclave 134°C', 'OSHA Compliant'].map((standard) => (
-                <div key={standard} className="p-4 bg-white/5 border border-white/10 rounded-lg">
-                  <p className="text-secondary-500 font-medium text-sm">{standard}</p>
-                </div>
-              ))}
             </div>
           </motion.div>
         </div>
