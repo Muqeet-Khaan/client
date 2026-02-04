@@ -82,14 +82,14 @@ const Contact = () => {
       title: 'Email Us',
       subtitle: 'Quick Response Guaranteed',
       details: [
-        'info@Karachidentalclinic.com',
-        'appointments@Karachidentalclinic.com',
-        'billing@Karachidentalclinic.com',
+        'info@shirazidentalcare.com',
+        'appointments@shirazidentalcare.com',
+        'billing@shirazidentalcare.com',
       ],
       color: 'bg-purple-50 text-purple-600',
       action: {
         text: 'Send Email',
-        href: 'mailto:info@Karachidentalclinic.com',
+        href: 'mailto:info@shirazidentalcare.com',
         icon: <Mail className="w-4 h-4" />,
       },
     },
