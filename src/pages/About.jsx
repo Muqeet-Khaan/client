@@ -90,7 +90,7 @@ const About = () => {
           >
             <div className="text-center space-y-6 mb-16">
               <h2 className="text-5xl md:text-6xl font-light text-primary-900 dark:text-white tracking-tight">
-                Our Vision for Shiraz
+                Our Vision for Karachi
               </h2>
               <div className="w-12 h-0.5 bg-secondary-500 mx-auto" />
             </div>
