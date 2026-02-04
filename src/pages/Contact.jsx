@@ -158,7 +158,7 @@ const Contact = () => {
                         Instant messaging for quick scheduling
                       </p>
                       <a
-                        href="https://wa.me/923338353771"
+                        href="https://wa.me/923009206148"
                         className="inline-flex items-center text-green-600 dark:text-green-400 font-medium text-sm hover:translate-x-1 transition-transform"
                       >
                         Chat Now <ArrowRight size={16} className="ml-2" />
