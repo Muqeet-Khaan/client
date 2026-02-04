@@ -56,7 +56,7 @@ const Footer = () => {
                 <p className="text-secondary-400 text-sm font-medium">Modern Dentistry • Trusted Excellence • Radiant Smiles</p>
               </div>
               <p className="text-neutral-300 text-sm leading-relaxed">
-                At Karachi Dental Care, we redefine premium dentistry through unwavering commitment to the highest standards of safety, precision, and patient comfort. Your smile deserves nothing less than extraordinary.
+                At Shirazi Dental Care, we redefine premium dentistry through unwavering commitment to the highest standards of safety, precision, and patient comfort. Your smile deserves nothing less than extraordinary.
               </p>
 
               <div className="space-y-3">
@@ -66,7 +66,7 @@ const Footer = () => {
                     className="text-secondary-400 mt-1 flex-shrink-0"
                   />
                   <span className="text-sm text-neutral-300">
-                    Rawal Pindi, Karachi, Pakistan
+                    Rawalpindi, Pakistan
                     <br />
                     <span className="text-xs text-neutral-400">Luxury Dental Care Center</span>
                   </span>
