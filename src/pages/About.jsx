@@ -427,7 +427,7 @@ const About = () => {
             className="space-y-8"
           >
             <h2 className="text-4xl font-bold font-heading">
-              Ready to Experience the Karachi Difference?
+              Ready to Experience the Shirazi Difference?
             </h2>
             <p className="text-xl text-primary-100">
               Schedule your appointment today and discover why thousands of
