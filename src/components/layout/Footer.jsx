@@ -159,19 +159,18 @@ const Footer = () => {
 
             {/* Newsletter & Social */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">Stay Connected</h3>
+              <h3 className="text-lg font-semibold mb-6 text-white">Stay Connected</h3>
 
               {/* Newsletter */}
               <div className="space-y-4 mb-8">
                 <p className="text-sm text-neutral-300">
-                  Subscribe to our newsletter for dental tips and special
-                  offers.
+                  Subscribe for exclusive dental tips and premium care updates.
                 </p>
                 <form className="space-y-3">
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-white placeholder-neutral-400 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
+                    className="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-white placeholder-neutral-400 focus:ring-2 focus:ring-secondary-500 focus:border-secondary-500 transition-all"
                   />
                   <Button
                     variant="primary"
@@ -179,6 +178,7 @@ const Footer = () => {
                     fullWidth
                     icon={<ArrowRight size={16} />}
                     iconPosition="right"
+                    className="bg-secondary-500 hover:bg-secondary-600"
                   >
                     Subscribe
                   </Button>
