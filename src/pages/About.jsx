@@ -274,8 +274,7 @@ const About = () => {
               Our Values
             </h2>
             <p className="text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              The principles that guide everything we do at Karachi Dental
-              Clinic
+              The principles that guide everything we do at Shirazi Dental Care
             </p>
           </motion.div>
 
