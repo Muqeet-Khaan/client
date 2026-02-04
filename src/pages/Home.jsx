@@ -10,6 +10,8 @@ import {
   Heart,
   ArrowRight,
   Star,
+  Check,
+  Diamond,
 } from 'lucide-react';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
