@@ -66,7 +66,7 @@ const Footer = () => {
                     className="text-secondary-400 mt-1 flex-shrink-0"
                   />
                   <span className="text-sm text-neutral-300">
-                    Karachi, Pakistan
+                    Shiraz, Iran
                     <br />
                     <span className="text-xs text-neutral-400">Luxury Dental Care Center</span>
                   </span>
