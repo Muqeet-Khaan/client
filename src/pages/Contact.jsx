@@ -242,7 +242,7 @@ const Contact = () => {
                       Location
                     </h3>
                     <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                      Rawal Pindi, Karachi, Pakistan<br />
+                      Rawalpindi, Pakistan<br />
                       Luxury Dental Care Center
                     </p>
                   </div>
@@ -383,7 +383,7 @@ const Contact = () => {
               Visit Us
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-400">
-              Located in the heart of Rawal Pindi, Karachi
+              Located in the heart of Rawalpindi, Pakistan
             </p>
           </motion.div>
 
