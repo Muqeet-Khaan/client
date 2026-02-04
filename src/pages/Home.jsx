@@ -135,15 +135,17 @@ const Home = () => {
                 Book Appointment
               </Button>
               <Button
-                as={Link}
-                to="/services"
+                as="a"
+                href="https://wa.me/923009206148"
+                target="_blank"
+                rel="noopener noreferrer"
                 variant="outline"
                 size="lg"
                 icon={<ArrowRight size={20} />}
                 iconPosition="right"
                 className="border-secondary-500 text-secondary-500 hover:bg-secondary-500/10 font-semibold px-8"
               >
-                View All Services
+                WhatsApp Now
               </Button>
             </div>
 
