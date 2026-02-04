@@ -220,7 +220,7 @@ const Footer = () => {
         <div className="border-t border-neutral-800 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-neutral-400">
-              © {currentYear} Karachi Dental Clinic. All rights reserved.
+              © {currentYear} Karachi Dental Care. All rights reserved.
             </div>
 
             <div className="flex items-center space-x-6">
@@ -228,7 +228,7 @@ const Footer = () => {
                 <Link
                   key={link.name}
                   to={link.href}
-                  className="text-sm text-neutral-400 hover:text-white transition-colors"
+                  className="text-sm text-neutral-400 hover:text-secondary-300 transition-colors"
                 >
                   {link.name}
                 </Link>
@@ -236,8 +236,7 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center text-sm text-neutral-400">
-              Made with <Heart size={14} className="mx-1 text-red-500" /> for
-              healthier smiles
+              Crafted with <Heart size={14} className="mx-1 text-secondary-500" /> for extraordinary smiles
             </div>
           </div>
         </div>
