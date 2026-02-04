@@ -383,7 +383,7 @@ const Contact = () => {
               Visit Us
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-400">
-              Located in the heart of Shiraz
+              Located in the heart of Rawal Pindi, Karachi
             </p>
           </motion.div>
 
