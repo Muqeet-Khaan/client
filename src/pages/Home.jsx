@@ -169,7 +169,7 @@ const Home = () => {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading leading-tight">
               Luxury Dental Care
               <br />
-              <span className="text-secondary-400">in Karachi</span>
+              <span className="text-secondary-400">in Shiraz</span>
             </h1>
 
             {/* Subheadline */}
