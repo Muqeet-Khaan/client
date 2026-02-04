@@ -117,17 +117,17 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
+              <h3 className="text-lg font-semibold mb-6 text-white">Quick Links</h3>
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
                   <li key={link.name}>
                     <Link
                       to={link.href}
-                      className="text-sm text-neutral-300 hover:text-white transition-colors flex items-center group"
+                      className="text-sm text-neutral-300 hover:text-secondary-300 transition-colors flex items-center group"
                     >
                       <ArrowRight
                         size={14}
-                        className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-200"
+                        className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-200 text-secondary-400"
                       />
                       {link.name}
                     </Link>
@@ -138,17 +138,17 @@ const Footer = () => {
 
             {/* Services */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">Our Services</h3>
+              <h3 className="text-lg font-semibold mb-6 text-white">Our Services</h3>
               <ul className="space-y-3">
                 {services.map((service) => (
                   <li key={service.name}>
                     <Link
                       to={service.href}
-                      className="text-sm text-neutral-300 hover:text-white transition-colors flex items-center group"
+                      className="text-sm text-neutral-300 hover:text-secondary-300 transition-colors flex items-center group"
                     >
                       <ArrowRight
                         size={14}
-                        className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-200"
+                        className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-200 text-secondary-400"
                       />
                       {service.name}
                     </Link>
