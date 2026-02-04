@@ -103,8 +103,8 @@ const About = () => {
                 className="space-y-6"
               >
                 <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
-                  Shirazi Dental Care represents a paradigm shift in how premium dental care is delivered. We envision 
-                  a Shiraz where exceptional oral health is accessible to those who demand the highest standards.
+                  Shirazi Dental Care represents a paradigm shift in how premium dental care is delivered. We envision
+                  a Karachi where exceptional oral health is accessible to those who demand the highest standards.
                 </p>
 
                 <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
