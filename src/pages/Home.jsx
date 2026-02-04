@@ -5,87 +5,122 @@ import {
   Calendar,
   Phone,
   MessageCircle,
-  Star,
-  Shield,
-  Award,
-  Users,
   CheckCircle,
-  ArrowRight,
+  Award,
+  Shield,
   Sparkles,
+  ArrowRight,
   Heart,
-  Clock,
+  TrendingUp,
+  Zap,
+  Users,
 } from 'lucide-react';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 
 const Home = () => {
+  // All 12 luxury dental services
   const services = [
     {
-      icon: <CheckCircle className="w-8 h-8 text-primary-500" />,
-      title: 'General Checkup',
-      description:
-        'Comprehensive dental examination and cleaning to maintain optimal oral health.',
-      href: '/services/general-checkup',
+      icon: <CheckCircle className="w-8 h-8 text-secondary-500" />,
+      title: 'Tooth Extraction',
+      description: 'Gentle, precise removal with advanced comfort techniques for swift recovery.',
+      href: '/services/tooth-extraction',
     },
     {
-      icon: <Sparkles className="w-8 h-8 text-accent-yellow" />,
-      title: 'Teeth Whitening',
-      description:
-        'Achieve a dazzling smile with our professional whitening treatments.',
-      href: '/services/teeth-whitening',
+      icon: <Sparkles className="w-8 h-8 text-secondary-500" />,
+      title: 'Scaling & Polishing',
+      description: 'Deep professional cleaning to reveal your teeth\'s natural radiance and vitality.',
+      href: '/services/scaling-polishing',
     },
     {
-      icon: <Shield className="w-8 h-8 text-accent-teal" />,
-      title: 'Orthodontics',
-      description:
-        'Straighten your teeth with modern braces and Invisalign solutions.',
-      href: '/services/orthodontics',
-    },
-    {
-      icon: <Heart className="w-8 h-8 text-red-500" />,
-      title: 'Dental Implants',
-      description:
-        'Permanent solution for missing teeth with natural-looking results.',
-      href: '/services/dental-implants',
-    },
-    {
-      icon: <Shield className="w-8 h-8 text-primary-500" />,
-      title: 'Root Canal',
-      description: 'Pain-free root canal therapy to save your natural teeth.',
+      icon: <Shield className="w-8 h-8 text-secondary-500" />,
+      title: 'Root Canal Treatment',
+      description: 'Painless, meticulous therapy to preserve your natural tooth and restore peace of mind.',
       href: '/services/root-canal',
     },
     {
-      icon: <Clock className="w-8 h-8 text-red-600" />,
-      title: 'Emergency Care',
-      description: '24/7 emergency dental services for urgent dental problems.',
-      href: '/services/emergency',
+      icon: <Award className="w-8 h-8 text-secondary-500" />,
+      title: 'Post & Core Build-Up',
+      description: 'Reinforcing compromised teeth for enduring strength and crown-ready stability.',
+      href: '/services/post-core',
+    },
+    {
+      icon: <Heart className="w-8 h-8 text-secondary-500" />,
+      title: 'Crown & Bridge Work',
+      description: 'Bespoke, lifelike restorations that seamlessly blend function, beauty, and durability.',
+      href: '/services/crown-bridge',
+    },
+    {
+      icon: <Zap className="w-8 h-8 text-secondary-500" />,
+      title: 'Dental Implants',
+      description: 'Permanent, natural-feeling tooth replacements that reclaim confidence and complete oral harmony.',
+      href: '/services/dental-implants',
+    },
+    {
+      icon: <Users className="w-8 h-8 text-secondary-500" />,
+      title: 'Removable Partial Denture',
+      description: 'Discreet, comfortable solutions designed for effortless aesthetics and ease.',
+      href: '/services/partial-denture',
+    },
+    {
+      icon: <Sparkles className="w-8 h-8 text-secondary-500" />,
+      title: 'Dental Fillings',
+      description: 'Premium, durable materials (GIC, Composite, Amalgam) for invisible, long-lasting repairs.',
+      href: '/services/fillings',
+    },
+    {
+      icon: <Shield className="w-8 h-8 text-secondary-500" />,
+      title: 'Primary Tooth Pulpectomy',
+      description: 'Gentle pediatric expertise to protect and preserve your child\'s developing smile.',
+      href: '/services/pulpectomy',
+    },
+    {
+      icon: <CheckCircle className="w-8 h-8 text-secondary-500" />,
+      title: 'Crown Cementation',
+      description: 'Flawless, secure placement for optimal alignment and lasting performance.',
+      href: '/services/crown-cementation',
+    },
+    {
+      icon: <TrendingUp className="w-8 h-8 text-secondary-500" />,
+      title: 'Orthodontic Services',
+      description: 'Sophisticated alignment solutions to enhance bite, symmetry, and facial elegance.',
+      href: '/services/orthodontics',
+    },
+    {
+      icon: <Zap className="w-8 h-8 text-secondary-500" />,
+      title: 'Dental X-Ray',
+      description: 'High-resolution digital imaging for accurate diagnostics with minimal exposure.',
+      href: '/services/x-ray',
     },
   ];
 
+  // 5 Hallmarks of Luxury Dentistry
   const whyChooseUs = [
     {
-      icon: <Shield className="w-6 h-6 text-primary-500" />,
-      title: 'Pain-Free Treatments',
-      description:
-        'Advanced anesthesia and gentle techniques for comfortable procedures.',
+      icon: <Zap className="w-6 h-6 text-secondary-500" />,
+      title: 'Cutting-Edge Technology',
+      description: 'Cutting-edge dental technology for precise, efficient outcomes.',
     },
     {
-      icon: <Award className="w-6 h-6 text-accent-teal" />,
-      title: 'State-of-the-Art Equipment',
-      description:
-        'Latest dental technology for precise diagnosis and treatment.',
+      icon: <Shield className="w-6 h-6 text-secondary-500" />,
+      title: 'Sterilization Standards',
+      description: 'Rigorous international sterilization and hygiene protocols.',
     },
     {
-      icon: <Users className="w-6 h-6 text-accent-yellow" />,
-      title: 'Experienced Specialists',
-      description:
-        'Board-certified dentists with years of specialized experience.',
+      icon: <Heart className="w-6 h-6 text-secondary-500" />,
+      title: 'Gentle Procedures',
+      description: 'Gentle, minimally invasive procedures with maximum comfort.',
     },
     {
-      icon: <Heart className="w-6 h-6 text-red-500" />,
-      title: 'Affordable Pricing',
-      description:
-        'Transparent pricing with flexible payment options for quality dental care.',
+      icon: <Award className="w-6 h-6 text-secondary-500" />,
+      title: 'Customized Care',
+      description: 'Fully customized treatment strategies tailored to your unique needs.',
+    },
+    {
+      icon: <TrendingUp className="w-6 h-6 text-secondary-500" />,
+      title: 'Premium Reputation',
+      description: 'Karachi\'s most trusted destination for sophisticated dental care.',
     },
   ];
 
@@ -93,70 +128,83 @@ const Home = () => {
     {
       name: 'Dr. Ahmed Sheikh',
       specialty: 'Oral and Maxillofacial Surgery',
-      image:
-        'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face',
+      image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face',
     },
     {
       name: 'Dr. Tayyab Sheikh',
       specialty: 'Prosthodontics & Endodontics',
-      image:
-        'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=150&h=150&fit=crop&crop=face',
+      image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=150&h=150&fit=crop&crop=face',
     },
     {
       name: 'Dr. Jawad',
       specialty: 'Orthodontics',
-      image:
-        'https://images.unsplash.com/photo-1594824804732-5f7cf38f9baa?w=150&h=150&fit=crop&crop=face',
+      image: 'https://images.unsplash.com/photo-1594824804732-5f7cf38f9baa?w=150&h=150&fit=crop&crop=face',
     },
   ];
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section - Luxury Design */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background */}
+        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&h=1080&fit=crop"
-            alt="Modern dental clinic interior"
+            alt="Luxury dental clinic interior"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-secondary-900/60"></div>
+          {/* Premium Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-900/70 via-primary-800/60 to-primary-900/70"></div>
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <h1 className="text-5xl md:text-7xl font-bold font-heading leading-tight">
-              Bright Smiles,
+            {/* Main Headline */}
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading leading-tight">
+              Luxury Dental Care
               <br />
-              <span className="text-accent-yellow">Lasting Health</span>
+              <span className="text-secondary-400">in Karachi</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl mx-auto leading-relaxed">
-              Expert dental care in New York – Comfortable, affordable, and
-              trusted by thousands of patients.
+            {/* Subheadline */}
+            <h2 className="text-2xl md:text-3xl font-light text-neutral-100 max-w-3xl mx-auto">
+              Precision, Comfort & Excellence in Every Smile
+            </h2>
+
+            {/* Body Text */}
+            <p className="text-lg md:text-xl text-neutral-200 max-w-3xl mx-auto leading-relaxed font-light">
+              Discover world-class dental care in a serene, impeccably hygienic, and technologically advanced environment. Our expert team blends cutting-edge innovations with bespoke, compassionate treatment to craft exceptional, long-lasting results you can trust and admire.
             </p>
 
             {/* Trust Signals */}
-            <div className="flex flex-wrap justify-center items-center gap-8 text-sm">
-              <div className="flex items-center space-x-2">
-                <Award className="w-5 h-5 text-accent-yellow" />
-                <span>5+ Years Experience</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Star className="w-5 h-5 text-accent-yellow" />
-                <span>5-Star Rating</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Shield className="w-5 h-5 text-accent-teal" />
-                <span>Certified Specialists</span>
-              </div>
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 text-sm pt-4">
+              <motion.div 
+                className="flex items-center space-x-2"
+                whileHover={{ scale: 1.05 }}
+              >
+                <Award className="w-5 h-5 text-secondary-400" />
+                <span className="font-medium">Advanced Technology</span>
+              </motion.div>
+              <motion.div 
+                className="flex items-center space-x-2"
+                whileHover={{ scale: 1.05 }}
+              >
+                <Shield className="w-5 h-5 text-secondary-400" />
+                <span className="font-medium">Sterilization Standards</span>
+              </motion.div>
+              <motion.div 
+                className="flex items-center space-x-2"
+                whileHover={{ scale: 1.05 }}
+              >
+                <Heart className="w-5 h-5 text-secondary-400" />
+                <span className="font-medium">Patient Comfort</span>
+              </motion.div>
             </div>
 
             {/* CTA Buttons */}
@@ -167,38 +215,29 @@ const Home = () => {
                 variant="primary"
                 size="lg"
                 icon={<Calendar size={20} />}
-                className="bg-accent-yellow hover:bg-yellow-500 text-neutral-900 font-bold"
+                className="bg-secondary-500 hover:bg-secondary-600 text-white font-bold shadow-lg hover:shadow-xl transition-all"
               >
-                Book Appointment
-              </Button>
-              <Button
-                variant="secondary"
-                size="lg"
-                icon={<Phone size={20} />}
-                href="tel:+1-555-123-4567"
-                className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-white/30"
-              >
-                Call Us Now
+                Book Your Consultation
               </Button>
               <Button
                 variant="primary"
                 size="lg"
-                icon={<i className="fab fa-whatsapp text-xl"></i>}
-                href="https://wa.me/03338353771"
-                className="bg-green-500 hover:bg-green-600 text-white border-green-500 font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+                icon={<MessageCircle size={20} />}
+                href="https://wa.me/923338353771"
+                className="bg-green-600 hover:bg-green-700 text-white font-bold shadow-lg hover:shadow-xl transition-all"
               >
-                Chat on WhatsApp
+                WhatsApp Now
               </Button>
             </div>
           </motion.div>
         </div>
 
-        {/* Scroll Indicator
+        {/* Scroll Indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}
@@ -211,10 +250,74 @@ const Home = () => {
               className="w-1 h-3 bg-white/70 rounded-full mt-2"
             />
           </motion.div>
-        </motion.div> */}
+        </motion.div>
       </section>
 
-      {/* Services Section */}
+      {/* About Section */}
+      <section className="py-20 bg-white dark:bg-neutral-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center space-y-8"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold font-heading text-primary-900 dark:text-white">
+              Elevating Oral Health with Uncompromising Excellence
+            </h2>
+            <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed max-w-4xl mx-auto">
+              At Karachi Dental Care, we redefine premium dentistry through unwavering commitment to the highest standards of safety, precision, and patient comfort. Our state-of-the-art clinic offers a tranquil sanctuary where every detail is curated for your relaxation and confidence. We prioritize personalized care plans, advanced techniques, and lifelong oral wellness—because your smile is a reflection of elegance and vitality.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section - Hallmarks of Luxury */}
+      <section className="py-20 bg-neutral-50 dark:bg-neutral-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold font-heading text-primary-900 dark:text-white mb-6">
+              The Hallmarks of True Luxury Dentistry
+            </h2>
+            <p className="text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
+              Five defining principles that set us apart
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            {whyChooseUs.map((item, index) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Card className="h-full p-8 text-center hover:shadow-lg transition-shadow">
+                  <div className="mb-6 flex justify-center">
+                    <div className="p-4 bg-secondary-50 dark:bg-secondary-900/20 rounded-full">
+                      {item.icon}
+                    </div>
+                  </div>
+                  <h3 className="text-lg font-semibold text-primary-900 dark:text-white mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-neutral-600 dark:text-neutral-300 text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section - All 12 Services */}
       <section className="py-20 bg-white dark:bg-neutral-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -223,12 +326,11 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold font-heading text-neutral-900 dark:text-white mb-6">
-              Our Services
+            <h2 className="text-4xl md:text-5xl font-bold font-heading text-primary-900 dark:text-white mb-6">
+              Our Signature Dental Services
             </h2>
             <p className="text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              Comprehensive dental care tailored to your needs, from routine
-              checkups to specialized treatments.
+              Comprehensive, luxury dental care for every need
             </p>
           </motion.div>
 
@@ -239,22 +341,22 @@ const Home = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: index * 0.05 }}
               >
-                <Card className="h-full p-8 text-center group cursor-pointer">
+                <Card className="h-full p-8 text-center group cursor-pointer hover:shadow-lg transition-all">
                   <Link to={service.href}>
                     <div className="mb-6 flex justify-center">
-                      <div className="p-4 bg-neutral-50 dark:bg-neutral-800 rounded-2xl group-hover:scale-110 transition-transform duration-300">
+                      <div className="p-4 bg-neutral-50 dark:bg-neutral-800 rounded-2xl group-hover:bg-secondary-50 dark:group-hover:bg-secondary-900/20 transition-colors duration-300">
                         {service.icon}
                       </div>
                     </div>
-                    <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-4">
+                    <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-4">
                       {service.title}
                     </h3>
-                    <p className="text-neutral-600 dark:text-neutral-300 mb-6">
+                    <p className="text-neutral-600 dark:text-neutral-300 mb-6 text-sm leading-relaxed">
                       {service.description}
                     </p>
-                    <div className="flex items-center justify-center text-primary-500 group-hover:text-primary-600 transition-colors">
+                    <div className="flex items-center justify-center text-secondary-600 group-hover:text-secondary-700 transition-colors">
                       <span className="font-medium">Learn More</span>
                       <ArrowRight
                         size={16}
@@ -269,48 +371,28 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-20 bg-neutral-50 dark:bg-neutral-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Hygiene & Safety Banner */}
+      <section className="py-16 bg-primary-900 dark:bg-primary-950 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="space-y-6"
           >
-            <h2 className="text-4xl md:text-5xl font-bold font-heading text-neutral-900 dark:text-white mb-6">
-              Why Choose Karachi?
+            <h2 className="text-4xl md:text-5xl font-bold font-heading">
+              Your Safety, Our Obsession
             </h2>
-            <p className="text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              We're committed to providing exceptional dental care in a
-              comfortable, modern environment.
+            <p className="text-lg text-neutral-100 max-w-3xl mx-auto leading-relaxed">
+              We adhere strictly to global sterilization standards, creating an impeccably clean, infection-free haven for every visit. Your wellbeing is paramount to everything we do.
             </p>
+            <div className="flex justify-center">
+              <div className="inline-flex items-center space-x-2 bg-secondary-500/20 px-6 py-3 rounded-full border border-secondary-400/50">
+                <Shield className="w-5 h-5 text-secondary-400" />
+                <span className="font-medium">ISO Certified & Internationally Accredited</span>
+              </div>
+            </div>
           </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {whyChooseUs.map((item, index) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="mb-6 flex justify-center">
-                  <div className="p-4 bg-white dark:bg-neutral-700 rounded-2xl shadow-soft">
-                    {item.icon}
-                  </div>
-                </div>
-                <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-neutral-600 dark:text-neutral-300">
-                  {item.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -323,12 +405,11 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold font-heading text-neutral-900 dark:text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold font-heading text-primary-900 dark:text-white mb-6">
               Meet Our Specialists
             </h2>
             <p className="text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              Our experienced team of dental professionals is here to provide
-              you with the highest quality care.
+              Our experienced team of dental professionals is here to provide you with the highest quality care.
             </p>
           </motion.div>
 
@@ -341,20 +422,17 @@ const Home = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="text-center p-8">
+                <Card className="text-center p-8 hover:shadow-lg transition-shadow">
                   <img
                     src={specialist.image}
                     alt={specialist.name}
-                    className="w-24 h-24 rounded-full mx-auto mb-6 object-cover"
+                    className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-secondary-200 dark:border-secondary-800"
                   />
-                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-2">
+                  <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                     {specialist.name}
                   </h3>
-                  <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">
+                  <p className="text-secondary-600 dark:text-secondary-400 font-medium mb-4">
                     {specialist.specialty}
-                  </p>
-                  <p className="text-neutral-600 dark:text-neutral-300 text-sm mb-6">
-                    {specialist.experience}
                   </p>
                   <Button
                     as={Link}
@@ -385,9 +463,13 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-secondary-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* Main CTA Section - Premium */}
+      <section className="py-20 bg-gradient-to-r from-primary-900 to-primary-800 text-white overflow-hidden relative">
+        {/* Decorative elements */}
+        <div className="absolute top-0 right-0 w-80 h-80 bg-secondary-500/10 rounded-full blur-3xl -mr-40 -mt-40"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-secondary-500/10 rounded-full blur-3xl -ml-40 -mb-40"></div>
+
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -395,11 +477,10 @@ const Home = () => {
             className="space-y-8"
           >
             <h2 className="text-4xl md:text-5xl font-bold font-heading">
-              Ready for Your Best Smile?
+              Your Smile Deserves Nothing Less Than Extraordinary
             </h2>
-            <p className="text-xl text-primary-100">
-              Don't wait – book your appointment today and take the first step
-              towards optimal dental health.
+            <p className="text-xl text-neutral-100 max-w-3xl mx-auto leading-relaxed">
+              Step into premium care tailored just for you. Schedule today and experience the difference of true luxury dentistry in Karachi.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -408,18 +489,27 @@ const Home = () => {
                 variant="secondary"
                 size="lg"
                 icon={<Calendar size={20} />}
-                className="bg-white text-primary-600 hover:bg-neutral-50"
+                className="bg-secondary-500 hover:bg-secondary-600 text-white font-bold"
               >
                 Book Appointment
               </Button>
               <Button
                 variant="outline"
                 size="lg"
+                icon={<MessageCircle size={20} />}
+                href="https://wa.me/923338353771"
+                className="border-white text-white hover:bg-white/10 font-bold"
+              >
+                WhatsApp Now
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
                 icon={<Phone size={20} />}
                 href="tel:03338353771"
-                className="border-white text-white hover:bg-white hover:text-primary-600"
+                className="border-white text-white hover:bg-white/10 font-bold"
               >
-                Call Emergency: 0333 8353771
+                Call Us
               </Button>
             </div>
           </motion.div>
