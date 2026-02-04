@@ -181,10 +181,10 @@ const Contact = () => {
                         Speak directly with our team
                       </p>
                       <a
-                        href="tel:+923338353771"
+                        href="tel:+923009206148"
                         className="inline-flex items-center text-secondary-600 dark:text-secondary-400 font-medium text-sm hover:translate-x-1 transition-transform"
                       >
-                        +92 333 8353771 <ArrowRight size={16} className="ml-2" />
+                        +92 300 920 6148 <ArrowRight size={16} className="ml-2" />
                       </a>
                     </div>
                   </div>
