@@ -60,7 +60,7 @@ const Logo = ({ className = "h-8 w-auto", variant = "default" }) => {
         fontSize="18"
         fill={currentColors.primary}
       >
-        Karachi
+        Shirazi
       </text>
       <text
         x="55"
@@ -70,7 +70,7 @@ const Logo = ({ className = "h-8 w-auto", variant = "default" }) => {
         fontSize="12"
         fill={currentColors.secondary}
       >
-        DENTAL CLINIC
+        DENTAL CARE
       </text>
     </svg>
   )
