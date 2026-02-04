@@ -2,12 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Custom CSS Variables for theming */
+/* Custom CSS Variables for luxury dental clinic theming */
 :root {
-  --color-primary: #1C9DD9;
-  --color-secondary: #0F4C81;
-  --color-accent-teal: #20C997;
-  --color-accent-yellow: #FFC857;
+  --color-primary: #1a2f5a; /* Deep Navy Blue */
+  --color-secondary: #d4a64e; /* Soft Gold */
+  --color-accent-gold: #d4a64e;
+  --color-accent-gray: #9ca3af;
   --color-neutral-light: #F7FAFC;
   --color-neutral-mid: #E2E8F0;
   --color-neutral-dark: #2D3748;
