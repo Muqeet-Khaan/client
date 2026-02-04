@@ -38,15 +38,6 @@ const About = () => {
 
   const teamMembers = [
     {
-      name: 'Dr. Fatima Hassan',
-      title: 'Orthodontics Specialist',
-      specialty: 'Orthodontics & Alignment',
-      experience: '15+ Years',
-      image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&h=300&fit=crop&crop=face',
-      bio: 'Dr. Hassan specializes in creating beautiful, aligned smiles using the latest orthodontic technologies. Her patient-centered approach ensures comfortable treatment experiences.',
-      qualifications: ['DMD - Orthodontic Specialty', 'Invisalign Certified', 'Advanced Braces Training', 'Pediatric Dentistry'],
-    },
-    {
       name: 'Dr. Nauman Shirazi',
       title: 'Dental Specialist',
       specialty: 'Implants, Aligners & Cosmetic Dentistry',
@@ -54,6 +45,15 @@ const About = () => {
       image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&h=300&fit=crop&crop=face',
       bio: 'Dr. Nauman Shirazi is a highly respected dental specialist with over 15 years of experience in implantology, orthodontic aligners, and cosmetic dentistry. His meticulous approach and dedication to patient comfort have earned him recognition as one of the region\'s leading dental professionals.',
       qualifications: ['DMD - International Dental Association', 'Certified Implantologist', 'Advanced Cosmetic Dentistry', 'Invisalign Certified'],
+    },
+    {
+      name: 'Dr. Fatima Hassan',
+      title: 'Orthodontics Specialist',
+      specialty: 'Orthodontics & Alignment',
+      experience: '15+ Years',
+      image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&h=300&fit=crop&crop=face',
+      bio: 'Dr. Hassan specializes in creating beautiful, aligned smiles using the latest orthodontic technologies. Her patient-centered approach ensures comfortable treatment experiences.',
+      qualifications: ['DMD - Orthodontic Specialty', 'Invisalign Certified', 'Advanced Braces Training', 'Pediatric Dentistry'],
     },
   ];
 
