@@ -14,9 +14,9 @@
 }
 
 .dark {
-  --color-neutral-light: #1A202C;
-  --color-neutral-mid: #4A5568;
-  --color-neutral-dark: #F7FAFC;
+  --color-neutral-light: #1a1714;
+  --color-neutral-mid: #3f3a35;
+  --color-neutral-dark: #ffffff;
 }
 
 /* Base styles */
