@@ -281,6 +281,59 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Extraordinary Smiles Call to Action */}
+      <section className="py-16 bg-white dark:bg-neutral-900 overflow-hidden">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="relative p-12 md:p-20 rounded-[3rem] bg-neutral-900 dark:bg-neutral-800 text-center overflow-hidden shadow-2xl"
+          >
+            {/* Background Decorative Elements */}
+            <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+              <div className="absolute -top-24 -left-24 w-96 h-96 bg-secondary-500 rounded-full blur-[100px]" />
+              <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary-500 rounded-full blur-[100px]" />
+            </div>
+
+            <div className="relative z-10 space-y-8">
+              <motion.div
+                animate={{
+                  scale: [1, 1.1, 1],
+                  filter: ["drop-shadow(0 0 0px rgba(234, 179, 8, 0))", "drop-shadow(0 0 20px rgba(234, 179, 8, 0.4))", "drop-shadow(0 0 0px rgba(234, 179, 8, 0))"]
+                }}
+                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                className="inline-flex items-center justify-center"
+              >
+                <Heart size={80} className="text-secondary-500" strokeWidth={1} />
+              </motion.div>
+
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-white tracking-tight leading-tight">
+                Click on <span className="text-secondary-500 font-medium">❤️</span> to book
+                <br />
+                <span className="italic">extraordinary smiles</span>
+              </h2>
+
+              <p className="text-neutral-400 text-lg md:text-xl font-light max-w-2xl mx-auto">
+                Join our community of satisfied patients and start your journey towards a more confident, radiant smile today.
+              </p>
+
+              <div className="pt-4">
+                <Button
+                  as={Link}
+                  to="/contact"
+                  size="lg"
+                  className="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold px-12 h-16 rounded-2xl shadow-xl shadow-secondary-500/20 transform hover:scale-105 transition-all duration-300"
+                >
+                  Book Your Experience
+                </Button>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Clinic Highlights Section */}
       <section className="py-20 md:py-32 bg-white dark:bg-neutral-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
