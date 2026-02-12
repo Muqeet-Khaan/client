@@ -20,9 +20,9 @@ import Card from '../components/ui/Card';
 import SEO from '../components/common/SEO';
 
 const Services = () => {
-  const [expandedCategory, setExpandedCategory] = useState('consultation');
+  const [expandedCategory, setExpandedCategory] = useState('all');
 
-  const serviceCategories = [
+  const baseCategories = [
     {
       id: 'consultation',
       name: 'Consultation',
@@ -136,6 +136,19 @@ const Services = () => {
         { title: 'Orthodontic Retainer', price: '8000–12000' },
       ],
     },
+  ];
+
+  const allServices = baseCategories.reduce((acc, cat) => [...acc, ...cat.services], []);
+
+  const serviceCategories = [
+    {
+      id: 'all',
+      name: 'All Services',
+      icon: <Layers className="w-5 h-5" />,
+      description: 'Explore our complete range of professional dental services and treatments.',
+      services: allServices,
+    },
+    ...baseCategories,
   ];
 
   return (
