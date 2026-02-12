@@ -37,11 +37,6 @@ const Footer = () => {
     { name: 'Emergency Care', href: '/services/emergency' },
   ];
 
-  const legalLinks = [
-    { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Terms of Service', href: '/terms' },
-    { name: 'Refund Policy', href: '/refund' },
-  ];
 
   return (
     <footer className="bg-neutral-900 dark:bg-black text-white">
@@ -266,21 +261,7 @@ const Footer = () => {
               © {currentYear} Shirazi Dental Care. All rights reserved.
             </div>
 
-            <div className="flex items-center space-x-6">
-              {legalLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  className="text-sm text-neutral-400 hover:text-secondary-300 transition-colors"
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
 
-            <div className="flex items-center text-sm text-neutral-400">
-              Crafted with <Heart size={14} className="mx-1 text-secondary-500" /> for extraordinary smiles
-            </div>
           </div>
         </div>
       </div>
