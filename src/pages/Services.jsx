@@ -290,7 +290,7 @@ const Services = () => {
                           </div>
                         </div>
                         <a
-                          href="https://wa.me/923338353771"
+                          href="https://wa.me/923009206148"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="hidden md:block bg-secondary-500 text-primary-900 px-6 py-2 rounded-xl font-bold hover:bg-secondary-600 transition-colors"
@@ -336,7 +336,7 @@ const Services = () => {
                 Book Appointment
               </Button>
               <Button
-                href="https://wa.me/923338353771"
+                href="https://wa.me/923009206148"
                 variant="outline"
                 size="lg"
                 className="border-neutral-700 text-white hover:bg-white/5 h-16 px-10 rounded-2xl"

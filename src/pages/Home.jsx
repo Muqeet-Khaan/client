@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
+import SEO from '../components/common/SEO';
 
 const Home = () => {
 
@@ -45,6 +46,10 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-neutral-900">
+      <SEO
+        title="Shirazi Dental Care | Premium Dentistry in Rawalpindi"
+        description="Experience the Art of Precision Dentistry at Shirazi Dental Care Rawalpindi. Expert care in Implants, Cosmetics, and Orthodontics by Dr. Nauman Shirazi."
+      />
       {/* Hero Section - Minimalist Luxury */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
