@@ -281,53 +281,72 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Extraordinary Smiles Call to Action */}
-      <section className="py-16 bg-white dark:bg-neutral-900 overflow-hidden">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Redesigned Extraordinary Smiles Call to Action */}
+      <section className="py-24 bg-white dark:bg-neutral-900 overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative p-12 md:p-20 rounded-[3rem] bg-neutral-900 dark:bg-neutral-800 text-center overflow-hidden shadow-2xl"
+            transition={{ duration: 0.8 }}
+            className="relative bg-primary-900 rounded-[2.5rem] overflow-hidden border border-secondary-500/10 shadow-2xl"
           >
-            {/* Background Decorative Elements */}
-            <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-              <div className="absolute -top-24 -left-24 w-96 h-96 bg-secondary-500 rounded-full blur-[100px]" />
-              <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary-500 rounded-full blur-[100px]" />
+            {/* Subtle Texture Overlay */}
+            <div className="absolute inset-0 opacity-30 pointer-events-none">
+              <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] invert"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-900 via-transparent to-primary-900"></div>
             </div>
 
-            <div className="relative z-10 space-y-8">
+            {/* Decorative Gold Accents */}
+            <div className="absolute -top-24 -right-24 w-64 h-64 bg-secondary-500/5 rounded-full blur-3xl" />
+            <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-secondary-500/5 rounded-full blur-3xl" />
+
+            <div className="relative z-10 px-8 py-20 md:py-28 flex flex-col items-center text-center">
+              {/* Refined Heart Icon */}
               <motion.div
                 animate={{
-                  scale: [1, 1.1, 1],
-                  filter: ["drop-shadow(0 0 0px rgba(234, 179, 8, 0))", "drop-shadow(0 0 20px rgba(234, 179, 8, 0.4))", "drop-shadow(0 0 0px rgba(234, 179, 8, 0))"]
+                  scale: [1, 1.05, 1],
                 }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                className="inline-flex items-center justify-center"
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className="mb-10"
               >
-                <Heart size={80} className="text-secondary-500" strokeWidth={1} />
+                <div className="relative">
+                  <Heart size={64} className="text-secondary-500 fill-secondary-500/10" strokeWidth={1} />
+                  <motion.div
+                    animate={{ scale: [1, 1.4, 1], opacity: [0.5, 0, 0.5] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                    className="absolute inset-0 border border-secondary-500 rounded-full"
+                  />
+                </div>
               </motion.div>
 
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-white tracking-tight leading-tight">
-                Click on <span className="text-secondary-500 font-medium">❤️</span> to book
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-light text-white tracking-tight leading-tight mb-8">
+                Click on <span className="text-secondary-500 font-medium italic">❤️</span> to book
                 <br />
-                <span className="italic">extraordinary smiles</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary-300 via-secondary-500 to-secondary-300 font-medium italic">
+                  extraordinary smiles
+                </span>
               </h2>
 
-              <p className="text-neutral-400 text-lg md:text-xl font-light max-w-2xl mx-auto">
-                Join our community of satisfied patients and start your journey towards a more confident, radiant smile today.
+              <p className="text-neutral-400 text-lg md:text-xl font-light max-w-2xl mx-auto mb-12 leading-relaxed">
+                Step into a sanctuary where science meets artistry. Your path to a perfectly aligned,
+                radiant smile begins with a single, elegant choice.
               </p>
 
-              <div className="pt-4">
+              <div className="flex flex-col sm:flex-row gap-6 items-center">
                 <Button
                   as={Link}
                   to="/contact"
                   size="lg"
-                  className="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold px-12 h-16 rounded-2xl shadow-xl shadow-secondary-500/20 transform hover:scale-105 transition-all duration-300"
+                  className="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold px-14 h-16 rounded-2xl shadow-xl shadow-secondary-500/20 transform hover:scale-105 transition-all duration-300"
                 >
-                  Book Your Experience
+                  Book Your Consultation
                 </Button>
+                <div className="text-neutral-500 font-light flex items-center space-x-2">
+                  <div className="w-8 h-px bg-neutral-800"></div>
+                  <span>Experience Luxury Care</span>
+                  <div className="w-8 h-px bg-neutral-800"></div>
+                </div>
               </div>
             </div>
           </motion.div>
